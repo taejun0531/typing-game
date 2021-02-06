@@ -1,0 +1,82 @@
+@import "./css/reset.css";
+
+@font-face{
+  font-family: "nanum";
+  src: url("./font/NanumBarunpenB.ttf");
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: nanum;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  background-image: url("./img/doraemon.png");
+  background-repeat: no-repeat;
+  background-size: 300px 280px;
+  background-position: right bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  padding: 20px;
+  width: 375px;
+  text-align: center;
+  background-color: azure;
+}
+
+.game__timertitle{
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+.game__timer{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.game__word{
+  margin: 25px 0;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.game__input{
+  width: 50%;
+  font-size: 18px;
+}
+
+.game__score{
+  margin: 10px 0;
+}
+
+.game__final_score{
+  margin-bottom: 10px;
+}
+
+.game__button{
+  width: 25%;
+  font-size: 14px;
+  background-color: seashell;
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
+}
+.game__button:disabled{
+  color: #000;
+  opacity: 0.7;
+}
+
+/* 출처: https://ingryong.tistory.com/4 [잉룡의 블로그] */
+.no-drag {
+  -ms-user-select: none; -moz-user-select: -moz-none; 
+  -webkit-user-select: none; -khtml-user-select: none; 
+  user-select:none;
+}
