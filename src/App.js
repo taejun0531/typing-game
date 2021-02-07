@@ -47,7 +47,7 @@ const App = (props) => {
   const handleChange = (e) => {
     if(e.target.value === word[wordNum]){
       setScore(score + 1);
-      setwordNum(Math.floor(Math.random() * 15));
+      setwordNum(Math.floor(Math.random() * word.length));
       setTime(time + 3);
       e.target.value = "";
     }
@@ -58,7 +58,7 @@ const App = (props) => {
     setbutton("starting ...");
     setinputDisables(false);
     setTime(10);
-    setwordNum( Math.floor(Math.random() * 15) );
+    setwordNum( Math.floor(Math.random() * word.length) );
     document.getElementsByClassName("game__input")[0].value = "";
   }
 
