@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/typing-game/static/css/main.f0284fab.chunk.css",
-    "main.js": "/typing-game/static/js/main.4dfd4bcf.chunk.js",
-    "main.js.map": "/typing-game/static/js/main.4dfd4bcf.chunk.js.map",
+    "main.css": "/typing-game/static/css/main.20cda319.chunk.css",
+    "main.js": "/typing-game/static/js/main.1405b8b5.chunk.js",
+    "main.js.map": "/typing-game/static/js/main.1405b8b5.chunk.js.map",
     "runtime-main.js": "/typing-game/static/js/runtime-main.65c8acd8.js",
     "runtime-main.js.map": "/typing-game/static/js/runtime-main.65c8acd8.js.map",
     "static/js/2.2c81efe9.chunk.js": "/typing-game/static/js/2.2c81efe9.chunk.js",
     "static/js/2.2c81efe9.chunk.js.map": "/typing-game/static/js/2.2c81efe9.chunk.js.map",
     "index.html": "/typing-game/index.html",
-    "static/css/main.f0284fab.chunk.css.map": "/typing-game/static/css/main.f0284fab.chunk.css.map",
+    "static/css/main.20cda319.chunk.css.map": "/typing-game/static/css/main.20cda319.chunk.css.map",
     "static/js/2.2c81efe9.chunk.js.LICENSE.txt": "/typing-game/static/js/2.2c81efe9.chunk.js.LICENSE.txt",
     "static/media/App.css": "/typing-game/static/media/doraemon.aa885933.png"
   },
   "entrypoints": [
     "static/js/runtime-main.65c8acd8.js",
     "static/js/2.2c81efe9.chunk.js",
-    "static/css/main.f0284fab.chunk.css",
-    "static/js/main.4dfd4bcf.chunk.js"
+    "static/css/main.20cda319.chunk.css",
+    "static/js/main.1405b8b5.chunk.js"
   ]
 }
