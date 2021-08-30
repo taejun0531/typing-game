@@ -22,8 +22,35 @@ html, body{
   background-size: 300px 280px;
   background-position: right bottom;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.addWord{
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 375px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.word__input{
+  margin-bottom: 10px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.word__button{
+  width: 25%;
+  font-size: 14px;
+  background-color: seashell;
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
 }
 
 .game{

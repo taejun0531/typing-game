@@ -10,8 +10,11 @@ const App = (props) => {
   const [button, setbutton] = useState("start");
   const [buttonDisables, setbuttonDisables] = useState(false);
 
-  const word = ["objective", "browser", "towel", "operator", "democracy", "effect", "route", "experience", "respect", "foundation",
-                "machine", "feather", "javascript", "reacthook", "bonus"];  
+  const [wordInputDisables, setWordInputDisables] = useState(false);
+  const [wordButtonDisables, setWordButtonDisables] = useState(false);
+
+  const [word] = useState(["objective", "browser", "towel", "operator", "democracy", "effect", "route", "experience", "respect", "foundation",
+                "machine", "feather", "javascript", "reacthook", "bonus"]);  
 
   const useInterval = (callback, delay) => {
     const savedCallback = useRef();
@@ -40,6 +43,8 @@ const App = (props) => {
         setbutton("restart");
         setfinalScore(score);
         setScore(0);
+        setWordInputDisables(false);
+        setWordButtonDisables(false);
       }
     }
   }, 1000);
@@ -54,6 +59,8 @@ const App = (props) => {
   }
 
   const handleClick = () => {
+    setWordButtonDisables(true);
+    setWordInputDisables(true);
     setbuttonDisables(true);
     setbutton("starting ...");
     setinputDisables(false);
@@ -62,7 +69,16 @@ const App = (props) => {
     document.getElementsByClassName("game__input")[0].value = "";
   }
 
+  const handleWordClick = () => {
+    word.push(document.getElementsByClassName("word__input")[0].value);
+    document.getElementsByClassName("word__input")[0].value = "";
+  }
+
   return <div className="container">
+    <div className="addWord">
+      <input className="word__input" disabled={wordInputDisables}/>
+      <button className="word__button" disabled={wordButtonDisables} onClick={() => handleWordClick()}>Add Words</button>
+    </div>
     <div className="game">
       <p className="game__timertitle">Your Time</p>
       <h1 className="game__timer">{time}</h1>
