@@ -70,8 +70,10 @@ const App = (props) => {
   }
 
   const handleWordClick = () => {
-    word.push(document.getElementsByClassName("word__input")[0].value);
-    document.getElementsByClassName("word__input")[0].value = "";
+    if(document.getElementsByClassName("word__input")[0].value.length >= 3){
+      word.push(document.getElementsByClassName("word__input")[0].value);
+      document.getElementsByClassName("word__input")[0].value = "";
+    }
   }
 
   return <div className="container">
